@@ -13,9 +13,6 @@ services:
         context: .
         dockerfile: ./containers/php/Dockerfile
       volumes:
-        # - ./code:/var/www/html
-        # - .code:/var/www/html
-        # - /mnt/c/git/docker-nginx-phpfpm/code:/var/www/html
         - type: bind
           source: ./code
           target: /var/www/html
